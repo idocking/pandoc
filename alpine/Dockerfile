@@ -53,7 +53,7 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
         texmf-dist \
         texmf-dist-most \
         xz \
-    && curl -Lsf 'https://github.com/jgm/pandoc/releases/download/2.1.1/pandoc-2.1.1-1-amd64.deb' \
+    && curl -Lsf 'https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb' \
     | bsdtar xOf - data.tar.xz \
     | tar -xvJ --strip-components 2 -C /usr/local \
     ## clean
